@@ -1,5 +1,14 @@
 import gymnasium as gym
 import numpy as np
+import omni.isaac.lab_tasks  # Requires Isaac Lab installation
+
+def make_xarm_env():
+    # Load the xArm reaching or manipulation task
+    env = gym.make("Isaac-Reach-xArm6-v0", render_mode="rgb_array") 
+    # Ensure observations are resized to 64x64 as per DreamerV3 standards
+    env = gym.wrappers.ResizeObservation(env, (64, 64))
+    return env
+
 
 def getEnvProperties(env):
     assert isinstance(env.action_space, gym.spaces.Box), "Sorry, supporting only continuous action space for now"
