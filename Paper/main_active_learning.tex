@@ -1,0 +1,124 @@
+%===============================================================================
+% ifacconf.tex 2025-07-31 jpuente  
+% 2022-11-11 jpuente change length of abstract
+% 2025-07-31 jldiez added section on the use of AI
+% Template for IFAC meeting papers
+% Copyright (c) 2025 International Federation of Automatic Control
+%===============================================================================
+\documentclass{ifacconf}
+% \usepackage{stfloats}    % allows better placement for wide floats
+\usepackage{graphicx}
+\usepackage{natbib}           
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bbm}
+\usepackage{color}
+\usepackage{enumerate}	 
+\usepackage{wrapfig}
+\usepackage{tabularx}    % include this line if your document contains figures
+%===============================================================================
+\begin{document}
+\begin{frontmatter}
+
+\title{Active Learning\thanksref{footnoteinfo}} 
+
+\thanks[footnoteinfo]{This work was supported in part by the U.S. National Science Foundation (NSF) under Award No. 1826086.}
+
+\author[First]{Zhifeng Han} 
+\author[Second]{Claire Walton} 
+
+
+\address[First]{University of Texas at San Antonio, 
+   San Antonio, TX 78249 USA (e-mail: zhifeng.han@utsa.edu).}
+\address[Second]{University of Texas at San Antonio, 
+   San Antonio, TX 78249 USA (e-mail: claire.walton@utsa.edu).}
+%\address[Third]{Electrical Engineering Department, 
+%   Seoul National University, Seoul, Korea, (e-mail: author@snu.ac.kr)}
+
+\begin{abstract}                % Abstract of 50--100 words
+As AI agents (LLMs and Robots) accumulate "crossed paths" of knowledge, internal world models become prone to "pre-convicted" 
+illusions—internal biases that override reality. This framework proposes a Focus Mode that uses Active Learning to dynamically balance internal predictions with direct environmental interactions, 
+ensuring the agent remains grounded in the "Working Sense."
+\end{abstract}
+
+\begin{keyword}
+LLM, robotic, Reinforcement Learning, world model, Active Learning, Focus Mode, Working Sense
+\end{keyword}
+
+\end{frontmatter}
+%===============================================================
+
+
+\input{Sections/1_Introduction}
+\input{Sections/2_Background.tex}
+\input{Sections/3_Architecture.tex}
+\input{Sections/4_Experiment.tex}
+\input{Sections/5_Conclusions}
+
+
+
+
+
+%=================================================================
+
+
+\section*{DECLARATION OF GENERATIVE AI AND AI-ASSISTED TECHNOLOGIES IN THE WRITING PROCESS}
+During the preparation of this work the author(s) used NotbookLM and ChatGPT in order to help English as secondary language speaker. 
+After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) 
+full responsibility for the content of the publication.
+
+\bibliography{ifacconf}
+
+
+% A conclusion section is not required. Although a conclusion may review
+% the main points of the paper, do not replicate the abstract as the
+% conclusion. A conclusion might elaborate on the importance of the work
+% or suggest applications and extensions.
+
+% \begin{ack}
+% Place acknowledgments here.
+% \end{ack}
+
+% \section*{DECLARATION OF GENERATIVE AI AND AI-ASSISTED TECHNOLOGIES IN THE WRITING PROCESS}
+% During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication.
+                                                   
+%\begin{thebibliography}{xx}  % you can also add the bibliography by hand
+
+%\bibitem[Able(1956)]{Abl:56}
+%B.C. Able.
+%\newblock Nucleic acid content of microscope.
+%\newblock \emph{Nature}, 135:\penalty0 7--9, 1956.
+
+%\bibitem[Able et~al.(1954)Able, Tagg, and Rush]{AbTaRu:54}
+%B.C. Able, R.A. Tagg, and M.~Rush.
+%\newblock Enzyme-catalyzed cellular transanimations.
+%\newblock In A.F. Round, editor, \emph{Advances in Enzymology}, volume~2, pages
+%  125--247. Academic Press, New York, 3rd edition, 1954.
+
+%\bibitem[Keohane(1958)]{Keo:58}
+%R.~Keohane.
+%\newblock \emph{Power and Interdependence: World Politics in Transitions}.
+%\newblock Little, Brown \& Co., Boston, 1958.
+
+%\bibitem[Powers(1985)]{Pow:85}
+%T.~Powers.
+%\newblock Is there a way out?
+%\newblock \emph{Harpers}, pages 35--47, June 1985.
+
+%\bibitem[Soukhanov(1992)]{Heritage:92}
+%A.~H. Soukhanov, editor.
+%\newblock \emph{{The American Heritage. Dictionary of the American Language}}.
+%\newblock Houghton Mifflin Company, 1992.
+
+%\end{thebibliography}
+
+% \appendix
+
+
+
+
+
+
+          % in the appendices.
+\end{document}

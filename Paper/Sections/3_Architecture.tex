@@ -1,0 +1,39 @@
+\section{Architecture}\label{architecture}
+
+ 
+
+We propose a novel architecture called Active Learning and Teaching Architecture (ALTA) that 
+integrates three key components: 
+
+\begin{itemize}
+    \item \textbf{Active Learning Module}: This module enables the robot to actively select informative 
+    samples for learning, reducing the need for extensive labeled data. 
+    \item \textbf{Teaching Module}: This component facilitates the robot's ability to teach and transfer knowledge to other agents or systems.
+    \item \textbf{Adaptive Planning Module}: This module allows the robot to adapt its planning strategies based on new information and changing environments.
+\end{itemize}
+
+
+
+The overall architecture can be represented as follows:\
+
+human demonstrate task as input to Active Learning Module output to Teaching Module 
+then output to Adaptive Planning Module finally robot performs task. As human pick and place object
+the robot learn from human demonstration through Active Learning Module, then Teaching Module help robot to generalize
+the task to different objects, finally Adaptive Planning Module enable robot to plan the pick and place task efficiently.
+
+
+
+The teaching module leverages techniques from \cite{dmp} to facilitate effective knowledge transfer. we utilize dreamer
+to learn the world model and plan the task through adaptive planning module. The active learning module is designed to minimize human intervention by selecting the most informative samples for learning, 
+as discussed in \cite{ebert2018internet}.
+
+the integration of these components allows ALTA to effectively learn from limited data,\cite{hafner2019dream} teach other agents, and adapt to dynamic environments,
+
+as illustrated in Figure 2. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{../Figures/architecture.png}
+    \caption{Active Learning and Teaching Architecture (ALTA) integrates Active Learning, Teaching, and Adaptive Planning modules to enable efficient robot learning and task execution.}
+    \label{fig:architecture}
+    
+\end{figure}

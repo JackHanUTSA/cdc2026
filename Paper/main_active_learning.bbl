@@ -1,0 +1,30 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Ebert et~al.(2018)Ebert, Van~Daele, Nordgreen, Karekla, Compare,
+  Zarbo, Brugnera, {\O}verland, Trebbi, Jensen et~al.}]{ebert2018internet}
+Ebert, D.D., Van~Daele, T., Nordgreen, T., Karekla, M., Compare, A., Zarbo, C.,
+  Brugnera, A., {\O}verland, S., Trebbi, G., Jensen, K.L., et~al. (2018).
+\newblock Internet-and mobile-based psychological interventions: applications,
+  efficacy, and potential for improving mental health.
+\newblock \emph{European Psychologist}.
+
+\bibitem[{Hafner et~al.(2019)Hafner, Lillicrap, Ba, and
+  Norouzi}]{hafner2019dream}
+Hafner, D., Lillicrap, T., Ba, J., and Norouzi, M. (2019).
+\newblock Dream to control: Learning behaviors by latent imagination.
+\newblock \emph{arXiv preprint arXiv:1912.01603}.
+
+\bibitem[{Schaal et~al.(2003)}]{dmp}
+Schaal, S. et~al. (2003).
+\newblock Dynamic movement primitives: Learning attractor models for motor
+  behavior.
+\newblock In \emph{IEEE Robotics and Automation}.
+
+\end{thebibliography}

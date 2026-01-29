@@ -1,0 +1,6 @@
+\subsection{XArm Visual Pick and Place}
+
+
+While the UR5 robot is a high performance industrial robot, the XArm is an accessible low-cost 7 DOF manipulation, which we control at approximately 0.5 Hz. 
+Similar to Section 3.2, the task requires localizing and grasping a soft object and moving it from one bin to another and back, shown in Figure 6. We connect the object to the gripper with a string, which makes it less likely for the object to get stuck in corners at the cost of more complex dynamics. The sparse reward, discrete action space, 
+and observation space match the UR5 setup except for the addition of depth image observations.
