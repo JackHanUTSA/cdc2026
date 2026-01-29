@@ -6,7 +6,7 @@
 
 ### Todo List
 
-[p] add paper reference 
+[p] add paper reference
 
 
 
